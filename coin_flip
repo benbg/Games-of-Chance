@@ -1,0 +1,22 @@
+def coin_flip(bet, guess):
+  if bet <= 0:
+    print("You need to Bet")
+  else:
+    print("Your bet $" + str(bet))
+#coin flip
+  print("Your guess " + guess)
+  flip = random.randint(1,2)
+  print("______________")
+#flip results + payout
+  if flip == 1:
+    print("The flip is Heads")
+  elif flip == 2:
+    print("The flip is Tails")
+
+#define if win and payout 
+
+  if(flip == 1 and guess == "Heads") or (flip == 2 and guess == "Tails"):
+    print("You won" + str(bet))
+  else:
+    print("You loose")
+    
